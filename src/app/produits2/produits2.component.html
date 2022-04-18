@@ -1,0 +1,9 @@
+<p>produits2 works!</p>
+<div *ngFor="let p of list">
+{{p.id}}
+{{p.title}}
+{{p.price}}
+{{p.quantity}}
+<a [routerLink]="['/del/',p.id]">delete</a>
+<a [routerLink]="['/update/',p.id]">update</a>
+</div>

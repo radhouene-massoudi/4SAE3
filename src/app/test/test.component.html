@@ -1,0 +1,13 @@
+<h1>4SAE3 is the best </h1>
+<input type="submit" value="msg" (click)="showMsg()">
+<div [style.backgroundColor]="c">test</div>
+<input value="change color" type="submit" (click)="changeColor()">
+<input type="text" [(ngModel)]="c">
+<div *ngFor="let p of listProdcut">
+    <div *ngIf="p.quantity!=0">
+        {{p.id}}
+        <a [routerLink]="['/detailP/',p.id]">detail</a>
+{{p.title}}
+    </div>
+
+</div>
