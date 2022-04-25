@@ -20,6 +20,11 @@ import { UpdateproductComponent } from './updateproduct/updateproduct.component'
 import { FirstComponent } from './first/first.component';
 import { AdduserComponent } from './user/adduser/adduser.component';
 import { UpdateuserComponent } from './user/updateuser/updateuser.component';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
+import { TvComponent } from './tv/tv.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { ShowoneProductComponent } from './showone-product/showone-product.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +41,12 @@ import { UpdateuserComponent } from './user/updateuser/updateuser.component';
     UpdateproductComponent,
     FirstComponent,
     AdduserComponent,
-    UpdateuserComponent
+    UpdateuserComponent,
+    ChildComponent,
+    ParentComponent,
+    TvComponent,
+    MobileComponent,
+    ShowoneProductComponent
   ],
   imports: [
     BrowserModule,

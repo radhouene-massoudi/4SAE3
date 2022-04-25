@@ -1,0 +1,4 @@
+<p>mobile works!</p>
+<div *ngFor="let u of listeMobile">
+    <app-showone-product [p]="u" (alike)="decreseLike($event)"></app-showone-product>
+</div>
