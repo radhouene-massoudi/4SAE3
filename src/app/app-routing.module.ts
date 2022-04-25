@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { DeleteproductComponent } from './deleteproduct/deleteproduct.component';
 import { DetailComponent } from './detail/detail.component';
+import { FirstComponent } from './first/first.component';
 import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ProductsComponent } from './products/products.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'del/:id', component:DeleteproductComponent},
   {path:'update/:id', component:UpdateproductComponent},
   {path:'test2', component:Test2Component},
+  {path:'f', component:FirstComponent},
   {path:'detailP/:id', component:DetailComponent},
   {path:'**', component:NotfoundComponent},
   

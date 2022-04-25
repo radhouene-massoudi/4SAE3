@@ -9,11 +9,17 @@ import { ProduitService } from '../productService/produit.service';
 })
 export class UpdateproductComponent implements OnInit {
 id!:any;
+liste!:any;
   constructor(private s:ProduitService,private ar:ActivatedRoute,
     private r:Router) { }
 
   ngOnInit(): void {
     this.id=this.ar.snapshot.params['id']
+this.s.getProductById(this.id).subscribe(
+  (d)=>{
+    this.liste=d;
+  }
+);
   }
 save(f:any){
   this.s.updateProduct(f,this.id).subscribe(

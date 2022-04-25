@@ -17,6 +17,9 @@ import { Produits2Component } from './produits2/produits2.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { DeleteproductComponent } from './deleteproduct/deleteproduct.component';
 import { UpdateproductComponent } from './updateproduct/updateproduct.component';
+import { FirstComponent } from './first/first.component';
+import { AdduserComponent } from './user/adduser/adduser.component';
+import { UpdateuserComponent } from './user/updateuser/updateuser.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,10 @@ import { UpdateproductComponent } from './updateproduct/updateproduct.component'
     Produits2Component,
     AddproductComponent,
     DeleteproductComponent,
-    UpdateproductComponent
+    UpdateproductComponent,
+    FirstComponent,
+    AdduserComponent,
+    UpdateuserComponent
   ],
   imports: [
     BrowserModule,
